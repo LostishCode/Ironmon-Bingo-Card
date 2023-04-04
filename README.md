@@ -1,23 +1,13 @@
-BingoCardGenerator
+Ironmon Bingo Card Generator
 ==================
 
-[![Build Status](https://travis-ci.org/cherdt/BingoCardGenerator.svg?branch=master)](https://travis-ci.org/cherdt/BingoCardGenerator)
+A bingo card generator. This is the source for https://lostishcode.github.io/Ironmon-Bingo-Card/
 
-A bingo card generator. This is the source for https://osric.com/bingo-card-generator/
-
-
-Tests
------
-
-I have recently added automated tests using [TravisCI](https://travis-ci.org/). Tests include:
-
-* [JSHint](http://jshint.com)
-* [QUnit](https://qunitjs.com/)
-
-
-History
+General
 -------
 
-I created this circa 2011. I was trying to create Midtown Village Window Bingo and I didn't like any of the tools I found online. It took a few hours to build the first version.
+I watch [bluekandy](https://twitch.tv/bluekandy) and his hgss (Heart Gold/ Soul Silver) [ironmon](https://gist.github.com/valiant-code/adb18d248fa0fae7da6b639e2ee8f9c1) streams and one of the other members
+wanted a proper way to generate bingo cards. In the future I plan to expand this with more terms and
+might even figure out a way to make choosing other streamer specific terms easier.
 
-It has been and continues to be a pleasant surprise to find that other people are using it for a variety of fun purposes (family reunions, birthday parties, classroom activities, etc.)! I have added additional features over the years as people request them.
+If you have a suggestion feel free to submit an issue!
