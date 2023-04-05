@@ -342,13 +342,66 @@ $(document).ready(bingoGenerator.checkQS);
 </script>
 </head>
 <body>
-<h1>Make your own bingo cards</h1>
+<h1>Make your own bingo card</h1>
 <form action="#results" method="get"><!-- onsubmit="generate();return false;" -->
-	<p id="intro">I've provided a sample to create bingo cards for a day in the park. You can enter your own settings to create your own custom bingo cards.</p>
+	<p id="intro">Press the button at the bottom to generate your bingo card.</p>
 	<fieldset>
 		<legend>Bingo Card Basics</legend>
-		<label>Card Title <input type="text" name="title" id="title" value="Day in the Park Bingo"></label>
-		<label>Word List (separated by commas)</label><textarea cols="60" rows="8" name="words" id="words">MANS,SPANK,Booba or Alex Jones trainer name,Moves Spell Something,Good mon but dies before first gym,UNABLE!,Friendship Evo,Pizza Wormadam,"We need setup",Sprout Tower Top Floor Pivot,"Perfect Ultimate Run",Miss Attack and Die,Jinx'd himself,POKEMON DIES (FREE SPACE),"Content warning... He's dead",Full restore/max pot,"PP Go Up",Illegal mon in lab,Escape Rope,"Swap out two stats and it's perfect","Oh my god we pivot",Bad heals,Baby mon gym team,Enemy set up,4 or more plates found,"Free bikes, anyone?",Favorite Pokemon is terrible,Someone guesses randomized Pokemon,Nature/ability is bad,Enemy has Counter/MirrorCoat/Metal Burst,Dies trying to escape Wild Pokemon</textarea>
+		<label>Card Title <input type="text" name="title" id="title" value="Ironmon Bingo"></label>
+		<label>Word List (separated by commas)</label>
+            <textarea cols="60" rows="8" name="words" id="words">
+MANS,
+SPANK,
+Booba or Alex Jones trainer name,
+Moves Spell Something,
+Good mon but dies before Falkner,
+UNABLE!,
+Friendship Evo,
+Pizza Wormadam,
+"We need setup",
+Sprout Tower Top Floor Pivot,
+"Perfect Ultimate Run",
+Miss Attack and Die,
+Jinx'd himself,
+"Content warning... He's dead",
+Full restore/max pot,
+"PP Go Up",
+Illegal mon in lab,
+Escape Rope,
+"Swap the stats and it's perfect",
+"Oh my god we pivot",
+Bad heals,
+Baby mon gym team,
+Enemy set up,
+4 or more plates found,
+"Free bikes anyone?",
+Favorite Pokemon is terrible,
+Someone guesses randomized Pokemon,
+Nature/ability is bad,
+Countered / Mirror Coated / Metal Bursted,
+Dies trying to escape Wild Pokemon,
+
+Headbutt pivoting,
+Min roll stat,
+Something has "the silly",
+Early ball,
+Friend of the stream,
+New seed generation,
+"We just win",
+Out of Falkner,
+Out of Bugsy,
+"Why is it so bad?",
+Game is confirmed sentient,
+Someone manifests something,
+Any evo,
+Mon is a normie,
+The rare encounter doesn't exist,
+Perish Song,
+stupid ai do be being stupid thou,
+smart ai do be input reading thou,
+Berry saved the run ,
+Greater than 10 baby heals
+            </textarea>
 	</fieldset>	
 
 	<fieldset>
@@ -359,8 +412,8 @@ $(document).ready(bingoGenerator.checkQS);
 				<option value="false">No</option>
 			</select>
 		</label>
-		<label>Free Space Text <input type="text" name="freespaceValue" id="freespaceValue" value="Park Bench"></label>
-        <label>Free Space Description <input type="text" name="freespaceSubheadingValue" id="freespaceSubheadingValue" value="Free Space"></label>
+		<label>Free Space Text <input type="text" name="freespaceValue" id="freespaceValue" value="woweeBoi"></label>
+        <label>Free Space Description <input type="text" name="freespaceSubheadingValue" id="freespaceSubheadingValue" value="(Free Space)"></label>
 		<label>Free Space Placement
 			<select name="freespaceRandom" id="freespaceRandom">
 				<option value="true">Random</option>
@@ -389,19 +442,8 @@ $(document).ready(bingoGenerator.checkQS);
 <div id="results"></div>
 
 <div id="footer">
-<a href="/bingo-card-generator/faq.html">Questions?</a> Comments? Contact chris @ osric . com
+wowee
 </div>
 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19082249-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
 </body>
 </html>
