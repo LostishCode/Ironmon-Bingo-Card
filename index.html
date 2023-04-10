@@ -344,7 +344,11 @@ $(document).ready(bingoGenerator.checkQS);
 <body>
 <h1>Make your own bingo card</h1>
 <form action="#results" method="get"><!-- onsubmit="generate();return false;" -->
-	<p id="intro">Press the button at the bottom to generate your bingo card.</p>
+	<p id="intro">Press the button below to generate your bingo card.</p>
+    <fieldset>
+      <label><input type="submit" value="Generate Bingo Cards"></label>
+      <div id="results"></div>
+    </fieldset>
 	<fieldset>
 		<legend>Bingo Card Basics</legend>
 		<label>Card Title <input type="text" name="title" id="title" value="Ironmon Bingo"></label>
@@ -435,11 +439,7 @@ Greater than 10 baby heals
 		<p>Select the <em>landscape</em> page layout when printing for best results</p>
 		<label>Number of cards to create <input type="text" name="number" id="number" value="1"></label>
 	</fieldset>
-	<label><input type="submit" value="Generate Bingo Cards"></label>
 </form>
-
-
-<div id="results"></div>
 
 <div id="footer">
 wowee
