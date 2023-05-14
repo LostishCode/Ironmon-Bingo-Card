@@ -339,59 +339,7 @@ $(document).ready(bingoGenerator.checkQS);
 		<label>Card Title <input type="text" name="title" id="title" value="Ironmon Bingo"></label>
 		<label>Word List (separated by newlines)</label>
             <textarea cols="60" rows="8" name="words" id="words">
-MANS,
-SPANK,
-"Booba" or "Alex Jones" trainer name/class,
-Moves Spell Something,
-Good mon but dies before Falkner,
-UNABLE!,
-Friendship Evo,
-Pizza Wormadam,
-"We need setup",
-Sprout Tower Top Floor Pivot,
-"Perfect Ultimate Run",
-Miss Attack and Die,
-Jinx'd himself,
-"Content warning... He's dead",
-Full restore/max pot,
-"PP Go Up",
-Illegal mon in lab,
-Escape Rope,
-"Swap the stats and it's perfect",
-"Oh my god we pivot",
-Bad heals,
-Baby mon gym team,
-Enemy set up,
-4 or more plates found,
-"Free bikes anyone?",
-Favorite Pokemon is terrible,
-Someone guesses randomized Pokemon,
-Nature/ability is bad,
-Countered / Mirror Coated / Metal Bursted,
-Dies trying to escape Wild Pokemon,
 
-Headbutt pivoting,
-Min roll stat,
-Something has "the silly",
-Early ball,
-Friend of the stream,
-New seed generation,
-"We just win",
-Out of Falkner,
-Out of Bugsy,
-"Why is it so bad?",
-Game is confirmed sentient,
-Someone manifests something,
-Any evo,
-Mon is a normie,
-The rare encounter doesn't exist,
-Perish Song,
-stupid ai do be being stupid thou,
-smart ai do be input reading thou,
-Berry saved the run,
-Greater than 10 baby heals,
-TM69 (nice),
-Keeps a !heartscale for more than literally 30s
             </textarea>
 	</fieldset>	
 
@@ -431,6 +379,32 @@ Keeps a !heartscale for more than literally 30s
 <div id="footer">
 wowee
 </div>
+
+
+<script type="text/javascript">
+const textarea = document.getElementById("words");
+const fileUrl = "terms.txt";
+
+fetch(fileUrl)
+  .then(response => response.text())
+  .then(data => {
+    textarea.value = data;
+  })
+  .catch(error => {
+    console.error(error);
+  });
+</script>
+
+<script src="jquery.inputfit.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('td').tdfit({
+      minSize: 16,
+      maxSize: 75,
+    });
+  });
+</script>
+
 
 </body>
 </html>
