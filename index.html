@@ -127,8 +127,7 @@ var bingoGenerator = {
         "use strict";
         var possibleSpaces, enoughSpaces, spaces, centerSquare, i, j, output;
         list = bingoGenerator.escapeHTML(list);
-	    list = bingoGenerator.newlineToBR(list);
-        possibleSpaces = bingoGenerator.removeEmptyElements(list.split(","));
+        possibleSpaces = bingoGenerator.removeEmptyElements(list.split("\n"));
 
         // Two options for including random Free Space:
         // Option 1: We don't have enough. Include in random placement.
@@ -184,7 +183,7 @@ var bingoGenerator = {
         var colsFilled, rowsFilled, spaces, i;
 
         // Check to make sure enough options are provided to fill the bingo card spaces
-        spaces = bingoGenerator.removeEmptyElements($("#words").val().split(",")).length;
+        spaces = bingoGenerator.removeEmptyElements($("#words").val().split("\n")).length;
         if ($("#freespace").val()) {
             spaces += 1;
         }
@@ -338,7 +337,7 @@ $(document).ready(bingoGenerator.checkQS);
 	<fieldset>
 		<legend>Bingo Card Basics</legend>
 		<label>Card Title <input type="text" name="title" id="title" value="Ironmon Bingo"></label>
-		<label>Word List (separated by commas)</label>
+		<label>Word List (separated by newlines)</label>
             <textarea cols="60" rows="8" name="words" id="words">
 MANS,
 SPANK,
